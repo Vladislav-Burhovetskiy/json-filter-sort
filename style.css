@@ -33,7 +33,7 @@ body {
 .title {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .data-section {
@@ -50,7 +50,7 @@ body {
 .display-data-block {
   display: flex;
   justify-content: space-between;
-  min-height: 450px;
+  min-height: 465px;
   background-color: var(--background-color-data);
   border-radius: 10px;
   padding: 30px 40px;
@@ -100,8 +100,9 @@ pre {
 }
 
 pre {
-  font-size: 12px;
-  margin-bottom: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 1px var(--text-shadow-color);
 }
 
 .result-block pre {
@@ -127,6 +128,7 @@ label {
   width: 100px;
   height: 100px;
   top: 100px;
+  left: 10px;
   border-radius: 50%;
   box-shadow: 10px 10px 10px var(--gradient-shadow);
 }
