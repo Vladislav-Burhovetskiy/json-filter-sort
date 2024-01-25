@@ -1,4 +1,5 @@
-# Task 2 Data Filters
+# JSON Data Filter / Sort [DEMOLINK](https://vladislav-burhovetskiy.github.io/json-filter-sort/)
+You can filter data by an Exclude or Include condition and select all or one option that is in the condition. And also sort JSON data in natural order.
 
 Quick start:
 
