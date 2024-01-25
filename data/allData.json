@@ -1,0 +1,78 @@
+{
+  "allData": [
+    {
+      "data": [
+        { "name": "John", "email": "john2@mail.com" },
+        { "name": "John", "email": "john1@mail.com" },
+        { "name": "Jane", "email": "jane@mail.com" }
+      ],
+      "condition": {
+        "include": [{ "name": "John" }],
+        "sortBy": ["email"]
+      }
+    },
+    {
+      "data": [
+        { "name": "John", "email": "john2@mail.com" },
+        { "name": "John", "email": "john1@mail.com" },
+        { "name": "Jane", "email": "jane@mail.com" }
+      ],
+      "condition": {
+        "exclude": [{ "name": "Jane" }],
+        "sortBy": ["email"]
+      }
+    },
+    {
+      "data": [
+        { "name": "John", "email": "john2@mail.com" },
+        { "name": "John", "email": "john1@mail.com" },
+        { "name": "Jane", "email": "jane@mail.com" }
+      ],
+      "condition": {
+        "include": [{ "name": "Jane" }, { "email": "john2@mail.com" }]
+      }
+    },
+    {
+      "data": [
+        { "name": "John", "email": "john2@mail.com" },
+        { "name": "John", "email": "john1@mail.com" },
+        { "name": "Jane", "email": "jane@mail.com" }
+      ],
+      "condition": {
+        "exclude": [{ "name": "John" }, { "email": "john2@mail.com" }]
+      }
+    },
+    {
+      "data": [
+        { "user": "mike@mail.com", "rating": 20, "disabled": false },
+        { "user": "greg@mail.com", "rating": 14, "disabled": false },
+        { "user": "john@mail.com", "rating": 25, "disabled": true }
+      ],
+      "condition": {
+        "exclude": [{ "disabled": true }],
+        "sortBy": ["rating"]
+      }
+    },
+    {
+      "data": [
+        { "user": "mike@mail.com", "rating": 20, "disabled": false },
+        { "user": "greg@mail.com", "rating": 14, "disabled": false },
+        { "user": "john@mail.com", "rating": 25, "disabled": true }
+      ],
+      "condition": {
+        "include": [{ "disabled": false }],
+        "sortBy": ["user"]
+      }
+    },
+    {
+      "data": [
+        { "user": "mike@mail.com", "rating": 20, "disabled": false },
+        { "user": "greg@mail.com", "rating": 14, "disabled": false },
+        { "user": "john@mail.com", "rating": 25, "disabled": true }
+      ],
+      "condition": {
+        "exclude": [{ "disabled": false }, { "user": "john@mail.com" }]
+      }
+    }
+  ]
+}

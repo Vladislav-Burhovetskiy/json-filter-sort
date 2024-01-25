@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Data filters</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="title">Filters and Sort data app:</h1>
+
+      <section class="data-section">
+        <div class="title-btn-container">
+          <h2>Data:</h2>
+          <button id="new-data-btn">New data</button>
+        </div>
+
+        <div class="display-data-block">
+          <pre id="income-data"></pre>
+
+          <div>
+            <div class="filters-block">
+              <h2>Filters:</h2>
+              <div>
+                <label for="select-include">Include:</label>
+                <select id="select-include">
+                  <option disabled selected>Select</option>
+                </select>
+              </div>
+              <div>
+                <label for="select-exclude">Exclude:</label>
+                <select id="select-exclude">
+                  <option disabled selected>Select</option>
+                </select>
+              </div>
+              <div>
+                <label for="select-sort">Sort By:</label>
+                <select id="select-sort">
+                  <option disabled selected>Select</option>
+                </select>
+              </div>
+            </div>
+            <div class="filters-line"></div>
+
+            <div class="result-block">
+              <h2>Result:</h2>
+              <pre id="result-data"></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="gradient"></div>
+    <div class="gradient-small"></div>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>

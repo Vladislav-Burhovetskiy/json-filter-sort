@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --primary-color: rgba(255, 255, 255, 0.85);
+  --secondary-color: rgba(255, 255, 255, 0.5);
+  --background-color: #2f2f2f;
+  --background-color-data: #202020;
+  --text-shadow-color: #000000;
+  --gradient-shadow: #a5d1f3;
+  --gradient-shadow-small: #8aebd6;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.main-container {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.data-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.display-data-block {
+  display: flex;
+  justify-content: space-between;
+  min-height: 450px;
+  background-color: var(--background-color-data);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.filters-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  min-width: 450px;
+}
+
+select,
+button {
+  border: 1px solid var(--secondary-color);
+  border-radius: 50px;
+  text-shadow: 1px 1px 1px var(--text-shadow-color);
+  cursor: pointer;
+}
+
+button {
+  font-weight: bold;
+  color: var(--primary-color);
+  background: transparent;
+  padding: 10px 20px;
+}
+
+select:hover,
+button:hover {
+  box-shadow: 0px 0px 3px var(--secondary-color);
+}
+
+button:active {
+  scale: 1.02;
+}
+
+select {
+  color: var(--secondary-color);
+  background: var(--background-color);
+  width: 105px;
+  padding: 9px 10px 9px 20px;
+}
+
+h2,
+pre {
+  text-align: start;
+}
+
+pre {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.result-block pre {
+  margin-left: 100px;
+}
+
+label {
+  font-weight: 300;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.filters-line {
+  background: var(--secondary-color);
+  margin: 20px 0 30px;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
+.gradient {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px var(--gradient-shadow);
+}
+
+.gradient-small {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 170px;
+  right: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px var(--gradient-shadow-small);
+}
